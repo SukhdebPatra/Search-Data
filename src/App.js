@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useReducer } from 'react';
 import axios from 'axios';
 import './App.css';
-
+import UseReducer from './Hooks/Context/Reducer with Api/UseReducer';
 import Search from './Search/Search';
 import CounterOne from './Hooks/Context/Reducer/CounterOne';
 import CounterTwo from './Hooks/Context/Reducer/CounterTwo';
@@ -10,6 +10,7 @@ import CounterFour from './Hooks/Context/Reducer/CounterFour';
 import ComponentA from './Hooks/Context/reducer+context/ComponentA';
 import ComponentB from './Hooks/Context/reducer+context/ComponentB';
 import ComponentC from './Hooks/Context/reducer+context/ComponentC';
+import UseState from './Hooks/Context/Reducer with Api/UseState';
 
 export const CountContext = React.createContext()
 
@@ -48,6 +49,13 @@ function App() {
 
   return (
     <>
+
+    {/* <UseState/> */}
+    <UseReducer/>
+
+
+
+    
       {/* <CounterOne/>
 <CounterTwo/>
 <hr/>
@@ -55,8 +63,8 @@ function App() {
 <hr/>
 <CounterFour/> */}
 
-
-      {/* reducer With context */}
+{/* 
+      reducer With context
       <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
 
         <div className='App'>
@@ -68,7 +76,7 @@ function App() {
 
 
         </div>
-      </CountContext.Provider>
+      </CountContext.Provider> */}
 
 
 
