@@ -13,6 +13,15 @@ button{
   background-color:brown;
 
 }
+.div1{
+  height: 300px;
+  width: 100%;
+  padding:0;
+  margin: 0;
+  border: 7px double rgb(17, 200, 20);
+text-align: center;
+
+}
 
 h1,h2{
   color: lightcyan;
