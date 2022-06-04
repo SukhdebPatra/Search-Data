@@ -3,6 +3,10 @@ import axios from  'axios';
 import './App.css';
 
 import Search from './Search/Search';
+import CounterOne from './Hooks/Context/Reducer/CounterOne';
+import CounterTwo from './Hooks/Context/Reducer/CounterTwo';
+import CounterThree from './Hooks/Context/Reducer/CounterThree';
+import CounterFour from './Hooks/Context/Reducer/CounterFour';
 
 function App() {
 const [students, setStudents] = useState([])
@@ -23,7 +27,15 @@ useEffect(()=>{
 
   return (
 <>
-<Search/>
+<CounterOne/>
+<CounterTwo/>
+<hr/>
+<CounterThree/>
+<hr/>
+<CounterFour/>
+
+
+{/* <Search/> */}
 {/* 
 <h1 style={{textAlign:'center'}}>Student Details</h1>
 <table className=" table table-primary">
